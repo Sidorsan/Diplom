@@ -273,6 +273,7 @@ function App() {
       }
       return;
     } else {
+
       moviesFiltered(saveMovies, search);
       setIsLoading(false);
     }

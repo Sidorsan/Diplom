@@ -12,8 +12,8 @@ class MainApi {
   }
 
   getInitialUser() {
-    return fetch(`https://${this._baseUrl}/users/me`, {
-    // return fetch(`http://${this._baseUrl}/users/me`, {
+    // return fetch(`https://${this._baseUrl}/users/me`, {
+    return fetch(`http://${this._baseUrl}/users/me`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("jwt")}`,
@@ -23,8 +23,8 @@ class MainApi {
   }
 
   getInitialMovies() {
-    return fetch(`https://${this._baseUrl}/movies`, {
-    // return fetch(`http://${this._baseUrl}/movies`, {
+    // return fetch(`https://${this._baseUrl}/movies`, {
+    return fetch(`http://${this._baseUrl}/movies`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("jwt")}`,
@@ -38,8 +38,8 @@ class MainApi {
   }
 
   postInitialMovies(data) {
-    return fetch(`https://${this._baseUrl}/movies`, {
-    // return fetch(`http://${this._baseUrl}/movies`, {
+    // return fetch(`https://${this._baseUrl}/movies`, {
+    return fetch(`http://${this._baseUrl}/movies`, {
       method: "POST",
       headers: {
         authorization: `Bearer ${localStorage.getItem("jwt")}`,
@@ -62,8 +62,8 @@ class MainApi {
   }
 
   deleteMovies(id) {
-    return fetch(`https://${this._baseUrl}/movies/${id}`, {
-    // return fetch(`http://${this._baseUrl}/movies/${id}`, {
+    // return fetch(`https://${this._baseUrl}/movies/${id}`, {
+    return fetch(`http://${this._baseUrl}/movies/${id}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${localStorage.getItem("jwt")}`,
@@ -73,8 +73,8 @@ class MainApi {
   }
 
   patchUser({ firstName, email }) {
-    return fetch(`https://${this._baseUrl}/users/me`, {
-    // return fetch(`http://${this._baseUrl}/users/me`, {
+    // return fetch(`https://${this._baseUrl}/users/me`, {
+    return fetch(`http://${this._baseUrl}/users/me`, {
       method: "PATCH",
       headers: {
         authorization: `Bearer ${localStorage.getItem("jwt")}`,
@@ -88,7 +88,7 @@ class MainApi {
   }
 }
 const mainApi = new MainApi({
-  baseUrl: "api.sidorsan.diploma.nomoredomains.sbs",
-  // baseUrl: "localhost:3001",
+  // baseUrl: "api.sidorsan.diploma.nomoredomains.sbs",
+  baseUrl: "localhost:3001",
 });
 export default mainApi;
