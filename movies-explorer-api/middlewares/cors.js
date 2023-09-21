@@ -9,7 +9,6 @@ const allowedCors = [
   'http://api.sidorsan.diploma.nomoredomains.sbs',
   'http://194.58.104.236',
 
-
 ];
 
 module.exports = { allowedCors };
