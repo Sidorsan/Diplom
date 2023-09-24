@@ -21,4 +21,4 @@ ______________
 - тестирование запросов
 - GIT
 
-Ссылка на сайт: http://sidorsan.diploma.nomoredomains.icu URL сервера: http://api.sidorsan.diploma.nomoredomains.sbs
+Ссылка на сайт: https://sidorsan.nomoredomains.sbs/
