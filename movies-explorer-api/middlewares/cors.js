@@ -8,6 +8,8 @@ const allowedCors = [
   'https://api.sidorsan.diploma.nomoredomains.sbs',
   'http://api.sidorsan.diploma.nomoredomains.sbs',
   'http://194.58.104.236',
+  "https://sidorsan.nomoredomains.sbs",
+  "http://sidorsan.nomoredomains.sbs",
 
 ];
 

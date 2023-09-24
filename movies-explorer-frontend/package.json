@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && scp -r ./build/* sidorsan@158.160.2.69:/home/sidorsan/diploma/frontend"
+    "deploy": "npm run build && scp -r ./build/* sidorsan@158.160.79.197:/home/sidorsan/frontend"
   },
   "eslintConfig": {
     "extends": [
