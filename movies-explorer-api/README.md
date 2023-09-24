@@ -1,2 +1,2 @@
 # movies-explorer-api
-# Адрес https://api.sidorsan.diploma.nomoredomains.sbs
+# Адрес https://api.sidorsan.nomoredomains.sbs
