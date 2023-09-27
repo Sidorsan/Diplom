@@ -1,0 +1,53 @@
+.dipolomSection {
+  padding: 70px 18px;
+}
+
+.dipolomSection__item {
+  box-sizing: border-box;
+  flex-basis: 33.33%;
+  /* padding: 10px; */
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all .3s;
+}
+
+.dipolomSection__item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all .3s;
+}
+
+.dipolomSection__item_screenshots {
+  max-width: 100%;
+}
+
+.dipolomSection__item_title {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.dipolomSection__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 20px 17px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .dipolomSection {
+    padding: 90px 50px;
+    background-color: #272727;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .dipolomSection {
+    padding: 100px 70px;
+  }
+}

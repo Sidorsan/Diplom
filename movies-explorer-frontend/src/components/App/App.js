@@ -17,6 +17,7 @@ import Profile from "../Profile/Profile";
 import Footer from "../Footer/Footer";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import PopapNotFound from "../PopapNotFound/PopapNotFound";
+import PopupImage from "../PopapImage/PopapImage";
 import mainApi from "../../utils/MainApi";
 import moviesApi from "../../utils/MoviesApi";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
@@ -67,6 +68,7 @@ function App() {
   const [checkedShotFilms, setCheckedShotFilms] = React.useState(
     localStorage.getItem("checkedShotFilms") === "true"
   );
+  const [selectedCard, setSelectedCard] = React.useState(null);
 
   useEffect(() => {
     handleTokenCheck();
@@ -100,6 +102,7 @@ function App() {
 
   function closeAllPopups() {
     setIsPopapNotFoundOpen(false);
+    setSelectedCard(null);
   }
 
   const handleLogin = ({ email, password }) => {
@@ -423,7 +426,7 @@ function App() {
         ) : null}
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Main onCardClick={setSelectedCard} />
           </Route>
           <Route path="/signup">
             {loggedIn ? (
@@ -483,6 +486,7 @@ function App() {
           isOpen={isPopapNotFoundOpen}
           onClose={closeAllPopups}
         />
+        <PopupImage card={selectedCard} onClose={closeAllPopups} />
       </>
     </CurrentUserContext.Provider>
   );

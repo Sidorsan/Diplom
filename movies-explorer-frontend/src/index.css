@@ -24,3 +24,6 @@
 @import url(../src/components/Movies/MoviesCardList/MoviesCardList.css);
 @import url(../src/components/PopapNotFound/PopapNotFound.css);
 @import url(../src/components/SavedMovies/SavedMovies.css);
+@import url(../src/components/Main/Diplom/DipolomSection/DipolomSection.css);
+@import url(../src/components/Main/Diplom/DiplomCard/DiplomCard.css);
+@import url(../src/components/PopapImage/PopapImage.css);

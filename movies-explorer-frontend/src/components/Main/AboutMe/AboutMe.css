@@ -81,9 +81,10 @@
 
   .aboutMe__photo {
     order: 1;
-    width: 255px;
-    height: 307px;
+    /* width: 255px;
+    height: 307px; */
     margin: 0;
+    max-width: 30%;
   }
 
   .aboutMe__info_text_title {
@@ -119,9 +120,10 @@
 
   .aboutMe__photo {
     order: 1;
-    width: 270px;
-    height: 327px;
+    /* width: 270px;
+    height: 327px; */
     margin: 0;
+    max-width: 30%;
   }
 
   .aboutMe__info_text_title {
